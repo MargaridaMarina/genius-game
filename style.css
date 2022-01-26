@@ -1,0 +1,118 @@
+/* GLOBAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background: rgb(244,205,205);
+    font-family: 'Poppins', sans-serif;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space:nowrap;
+    border-width:0;
+}
+
+.container {
+    width: min(90vw, 800px);
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* TÍTULO */
+
+.title {
+    margin-bottom:0.8rem;
+    color: white;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    background-color: #B96A6A;
+    height: 5rem;
+    display: flex;
+}
+/* RODAPÉ */
+
+.footer {
+    color: #B96A6A;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 5rem;
+    display: flex;
+   
+}
+
+/* BOTÕES */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.buttons-all {
+    background-color: rgb(246, 248, 242);
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px -2px;
+}
+
+.scores {
+    text-align: center;
+}
+
+.button.pisca {
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+.button {
+    width: 125px;
+    height: 125px;
+    border: 2px #dddddd solid;
+    border-radius: 2rem;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-green {
+    background-color: #9e2a2b;
+    border-radius: 100% 0 0;
+}
+
+.button-red {
+    background-color: #ffddd2;
+    border-radius: 0 100% 0 0;
+}
+
+.button-yellow {
+    background-color:#e29578;
+    border-radius: 0 0 0 100%;
+}
+
+.button-blue {
+    background-color: #540b0e;
+    border-radius: 0 0 100% 0;
+}
